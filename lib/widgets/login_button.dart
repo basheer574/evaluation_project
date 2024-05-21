@@ -43,12 +43,12 @@ class _LoginButtonState extends State<LoginButton> {
       }
     }
   }
-
+  //Show this snack bar to user if email is not found
   void wrongEmailMessage() {
     SnackBar snackBar = const SnackBar(content: Text("Incorrect Email"));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
-
+  //Show this snack bar to user if password is incorrect
   void wrongPasswordMessage() {
     SnackBar snackBar = const SnackBar(content: Text("Incorrect Password"));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
